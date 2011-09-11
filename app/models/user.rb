@@ -8,4 +8,7 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :avatar
 
   mount_uploader :avatar, AvatarUploader
+
+  has_many :groupings
+  has_many :groups, :through => :groupings
 end
