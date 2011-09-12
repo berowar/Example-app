@@ -1,0 +1,6 @@
+<h1>Groups#index</h1>
+<% for group in @groups do %>
+  <%= link_to group.title, group %>
+<% end %>
+
+<p><%= link_to "New Group", new_group_path %></p>

@@ -1,0 +1,15 @@
+<h1>Groups#show</h1>
+
+<%= link_to "Edit Group", edit_group_path(@group) %>
+
+<h2><%= @group.title %></h2>
+
+<%= render "members" %>
+
+<p>
+  <% unless @group.users.include?(current_user) %>
+    <%= form_for :group, :url => group_join_path(@group) do |f| %>
+      <%= f.submit "Join group" %>
+    <% end %>
+  <% end %>
+</p>
