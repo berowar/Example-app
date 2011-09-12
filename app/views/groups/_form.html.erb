@@ -1,6 +1,7 @@
 <p>
   <%= form_for @group do |f| %>
     <p>Title :<%= f.text_field :title %></p>
+    <p>Tags(separated by commas): <%= f.text_field :tag_list %></p>
     <%= f.submit %>
   <% end %>
 </p>

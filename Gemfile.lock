@@ -184,7 +184,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  acts-as-taggable-on
+  acts-as-taggable-on (~> 2.1.0)
   capybara
   carrierwave
   ckeditor-rails

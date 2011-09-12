@@ -18,7 +18,7 @@ gem 'jquery-rails'
 gem 'carrierwave'
 gem 'mini_magick'
 
-gem 'acts-as-taggable-on'
+gem 'acts-as-taggable-on', '~>2.1.0'
 
 group :development, :test do
   gem 'ruby-debug19', :require => 'ruby-debug'
