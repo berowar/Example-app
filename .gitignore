@@ -7,3 +7,4 @@ db/schema.rb
 .DS_Store
 .rspec
 public/uploads
+public/ckeditor_assets
