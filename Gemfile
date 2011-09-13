@@ -12,7 +12,6 @@ end
 
 gem 'devise'
 
-gem 'ckeditor-rails'
 gem 'jquery-rails'
 
 gem 'carrierwave'
@@ -21,6 +20,8 @@ gem 'mini_magick'
 gem 'acts-as-taggable-on', '~>2.1.0'
 
 gem 'simple_form'
+
+gem "ckeditor", :git => "git://github.com/galetahub/ckeditor.git"
 
 group :development, :test do
   gem 'ruby-debug19', :require => 'ruby-debug'
