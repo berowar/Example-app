@@ -2,7 +2,7 @@
   <%= javascript_include_tag "/javascripts/ckeditor/ckeditor.js" %>
 <% end %>
 
-<%= simple_form_for([@group, @article], :html => {:novalidate => true}) do |f| %>
+<%= simple_form_for([@group, @article]) do |f| %>
   <%= f.input :title %>
   <%= f.ckeditor :body, :input_html => { :width => 800 } %>
   <%= f.button :submit %>
