@@ -17,6 +17,6 @@
 </p>
 
 <div id='articles'>
-  Articles:
+  Articles: <%= link_to "new article", [:new, @group, :article] %>
   <%= render @group.articles %>
 </div>
