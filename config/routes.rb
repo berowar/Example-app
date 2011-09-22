@@ -8,6 +8,10 @@ SocialNetwork::Application.routes.draw do
     resources :articles
   end
 
+  resources :articles do
+    resources :comments
+  end
+
   devise_for :users
 
 end

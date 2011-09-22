@@ -1,5 +1,19 @@
 <h1><%= @article.title %></h1>
-<p><%= raw @article.body %></p>
 
 <%= link_to "Back to Group Articles", [@group, :articles] %> |
 <%= link_to "Edit Article", [:edit, @group, @article] %>
+
+<p><%= raw @article.body %></p>
+
+Comments:
+<div id="comments">
+  <%= render @comments %>
+</div>
+
+Add your comment:
+<p>
+  <%= simple_form_for [@article, Comment.new], :remote => true do |f| %>
+    <%= f.input :content %>
+    <%= f.button :submit %>
+  <% end %>
+</p>

@@ -27,12 +27,15 @@ describe ArticlesController do
 
     describe "GET show" do
       before do
+        @comment = mock_model(Comment)
         group.stub_chain(:articles, :find) { article }
+        article.stub(:comments) { @comment }
         get :show, :group_id => 1, :id => 1
       end
       it { response.should be_success }
       it { response.should render_template("show") }
       it { assigns[:article].should == article }
+      it { assigns[:comments].should == @comment }
     end
 
     describe "GET new" do
