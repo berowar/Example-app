@@ -10,8 +10,8 @@
 
 <p>
   <% unless @group.users.include?(current_user) %>
-    <%= form_for :group, :url => group_join_path(@group) do |f| %>
-      <%= f.submit "Join group" %>
+    <%= simple_form_for :group, :url => group_join_path(@group) do |f| %>
+      <%= f.button :submit, "Join group" %>
     <% end %>
   <% end %>
 </p>

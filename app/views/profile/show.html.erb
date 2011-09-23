@@ -8,11 +8,12 @@
     <p>Add Avatar</p>
 <% end %>
 
-<%= form_for @user, :url => profile_path, :html => {:multipart => true} do |f| %>
+<%= simple_form_for @user, :url => profile_path, :html => {:multipart => true} do |f| %>
   <p>
-    <%= f.file_field :avatar %>
+    <%= f.input :avatar, :as => :file %>
   </p>
-  <%= f.submit "Save Avatar" %>
+
+  <%= f.button :submit, "Save Avatar" %>
 <% end %>
 
 <p>My Email: <%= @user.email %></p>
