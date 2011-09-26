@@ -33,4 +33,6 @@ group :development, :test do
   gem 'ffaker'
   gem 'database_cleaner'
   gem 'launchy'
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
 end
