@@ -4,7 +4,9 @@
 
 <h2><%= @group.title %></h2>
 
-<p>Tags: <%= @group.tag_list %></p>
+<div id="tags">
+  Tags: <%= @group.tag_list %>
+</div>
 
 <%= render "members" %>
 

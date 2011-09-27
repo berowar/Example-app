@@ -10,4 +10,7 @@ FactoryGirl.define do
     password_confirmation { password }
   end
 
+  factory :group do
+    title 'group title'
+  end
 end
