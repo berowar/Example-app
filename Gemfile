@@ -35,4 +35,5 @@ group :development, :test do
   gem 'launchy'
   gem 'cucumber-rails'
   gem 'database_cleaner'
+  gem 'pickle'
 end
