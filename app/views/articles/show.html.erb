@@ -13,7 +13,7 @@ Comments:
 Add your comment:
 <p>
   <%= simple_form_for [@article, Comment.new], :remote => true do |f| %>
-    <%= f.input :content %>
+    <%= f.input :content, :label => "Your comment" %>
     <%= f.button :submit %>
   <% end %>
 </p>

@@ -11,6 +11,12 @@ FactoryGirl.define do
   end
 
   factory :group do
-    title 'group title'
+    title "group's title"
+  end
+
+  factory :article do
+    title  "comment's' title"
+    body   "comment's body"
+    author { Factory(:user) }
   end
 end
